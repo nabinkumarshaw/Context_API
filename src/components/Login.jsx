@@ -6,7 +6,7 @@ const Login = () => {
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
 
-    const {setUser} = useContext(usercontext);
+    const {setUser} = useContext(usercontext);   //This line is most important whenever we have to use usecontext to globalise the thing we use this
 
     const handlesubmit = (e)=>{
         e.preventDefault();
